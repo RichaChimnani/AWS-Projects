@@ -1,0 +1,44 @@
+ # Introducing Today's Project!
+ ## What is Amazon S3
+ Amazon S3 (Simple Storage Service) is a scalable, durable, and secure cloud
+ storage service for data storage and retrieval. It's cost-effective and integrates
+ with other AWS services, making it essential for efficient, reliable, and flexible.
+
+## How I used Amazon S3 in this project
+ In today's project, I used Amazon S3 to enable website hosting. I configured an
+ S3 bucket to host a static website, set up appropriate bucket policies to allow
+ public access, and uploaded necessary website files
+
+##  How I Set Up an S3 Bucket
+ Creating an S3 bucket took me hardly 5 minutes
+ The Region I picked for my S3 bucket was AWS Ohio because using a nearby
+ region can offer better availability and redundancy options, ensuring your
+ services remain up and running even during unexpected events
+
+##  Upload Website Files to S3
+ index.html and image assets
+ I uploaded two files to my S3 bucket - they were index HTML file sets up
+ website and images folder for the website.
+ Both files are necessary for this project as we are creating a public website
+
+## Static Website Hosting on S3
+ Website hosting means providing storage space and access for websites on a
+ server. This service enables individuals or organizations to publish their
+ websites on the internet, making them accessible to users worldwide. Hosting
+ providers offer various
+ To enable website hosting with my S3 bucket, I configured the bucket to host a
+ static website by setting the appropriate bucket policy and enabling website
+ hosting settings. This included specifying the index and error document names,
+ uploading my we
+ An ACL is an Access Control List, a set of rules controlling access permissions
+ to objects in S3 buckets. I recommend disabling ACLs in favor of IAM policies
+ for more secure and consistent access management.
+
+ ## Bucket Endpoints
+ What is a bucket website endpoint URL? Start your response with 'Once static
+ website is enabled, S3 produces a bucket endpoint URL, which is'... Once static
+ website hosting is enabled, S3 produces a bucket endpoint URL, which is the
+ unique web addres
+ When I first visited the bucket endpoint URL, I saw an error message stating
+ that the website couldn't be found. The reason for this error was that the
+ bucket policy did not allow public access, and the necessary website files,
